@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- aqui el header -->
+    </header>
+    <main>
+        <form action="doc">
+            <fieldset>
+                <div class="div_h2">
+                    <h2>Dejenos tu consulta </h2>
+                </div>
+                <div class="div_form_label">
+                    <label for="name">Nombre</label> <br>
+                    <label for="lastname">Apellido</label> <br>
+                    <label for="mail">Email</label> <br>
+                    <label for="consulta">Dejanos tu consulta</label> <br>
+                </div>
+
+                <div class="div_form_input">
+                    <input type="text" name="name" placeholder="Nombre"> <br>
+                    <input type="text" name="lastname" placeholder="Apellido"> <br>
+                    <input type="email" name="mail" placeholder="example@mail.com"> <br>
+                    <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Escriba su consulta"></textarea>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="novedades"> 
+                    <label for="novedades">Deseo recibir novedades sobre este sitio</label><br>
+                    <input type="submit" name="submit" id="submit_buttton">
+                    <input type="reset" value="reset">
+
+                </div>
+
+                
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+        <!-- aqui el footer -->
+    </footer>
+</body>
+</html>
