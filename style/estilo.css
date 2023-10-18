@@ -10,6 +10,7 @@
 
 p{
     font-family: 'Roboto', sans-serif;
+    line-height: 2;
 }
 
 h1,h2{
@@ -38,6 +39,7 @@ header{
     display: flex;
     width: 100%;
     height: 50px;
+    margin-bottom: 10vh;
     background-color: #95c1b7;
     justify-content: center;
     align-items: center;
@@ -201,15 +203,10 @@ nav li:hover{
     line-height: 2;
 }
 
-span{
-    font-weight: lighter;
-}
-
 
 /* Benefits */
 #benefits {
     width: 100%;
-    /* height: 500px; */
     padding: 2rem;
     display: flex;
     flex-wrap: wrap;
@@ -218,9 +215,25 @@ span{
     margin: auto;
     background-color:#95c1b7;
 }
+
+.div_benefits_title{
+    width: 60%;
+    color: white;
+    text-shadow: 2px 2px 3px BLACK;
+    border-bottom:2px solid white;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
+.div_benefits_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2vh;
+}
+
 .card {
     width: 300px;
-    /* height: 350px; */
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -246,7 +259,6 @@ span{
 }
 
 .card:hover {
-    background-color:rgb(250, 244, 236);
     box-shadow: 2vh 2vh 2vh rgba(0, 0, 0, 0.918);
     transform: scale(1.1);
 }
@@ -328,3 +340,74 @@ iframe{
     color: white;
 }
 
+/* ------------------------------------------------------------------- */
+/* form */
+
+#contact{
+    width: 100%;
+    padding: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form{
+    display: flex;
+    flex-direction: row;
+    background-image: url(../img/yoga-girl1.jpg);
+    background-position: center;
+    width: 80%;
+    margin: 10vh;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.301);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.486);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.226);
+
+}
+
+.div_form{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10vh ;
+}
+
+.div_form_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.div_form_left p{
+    text-align: justify;
+
+}
+
+.div_form_title{
+    border-bottom: 2px solid #ffffff;
+    width: 100%;
+    margin: 5vh;
+}
+
+.put_left{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.div_form_right{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div_name_lastname{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+input{
+    padding: 5px;
+    margin: 10px;
+    
+}
