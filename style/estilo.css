@@ -13,7 +13,7 @@ p{
     line-height: 2;
 }
 
-h1,h2{
+h1,h2,h3,h4{
     font-family: 'Young Serif', serif;
     line-height: 2;
 }
@@ -46,8 +46,8 @@ header{
     position: fixed;
     z-index: 1;
     -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
--moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
 }
 
 nav ul{
@@ -76,23 +76,20 @@ nav li:hover{
 
 #encabezado{
     width: 100%;
-    height: 400px;
     display: flex;
     flex-wrap: wrap;
     background-color: #95c1b7;
+    justify-content: center;
+    align-items: center;
 }
 
 .div_encabezado_img{
     width: 40%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.div_encabezado_img img{
-    height: 400px;
-}
 
 .div_encabezado_txt{
     width: 60%;
@@ -155,6 +152,7 @@ nav li:hover{
 .div_teacher_img{
     width: 50%;
     height: 100%;
+
 }
 
 .div_teacher_img img{
@@ -198,7 +196,7 @@ nav li:hover{
 }
 
 .iyengar_div_txt p{
-    width: 70vh;
+    width: 70%;
     height: 70%;
     line-height: 2;
 }
@@ -360,6 +358,7 @@ iframe{
     -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.301);
     -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.486);
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.226);
+    flex-wrap: wrap;
 
 }
 
@@ -374,11 +373,12 @@ iframe{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 50%;
 }
 
 .div_form_left p{
     text-align: justify;
+    width: 80%;
 
 }
 
@@ -388,26 +388,93 @@ iframe{
     margin: 5vh;
 }
 
-.put_left{
-    display: flex;
-    justify-content: flex-start;
-}
-
 .div_form_right{
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    padding: 5vh;
 }
 
-.div_name_lastname{
+
+input, textarea{
+    padding: 5px;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    width: 100%; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.div_form_buttons{
     display: flex;
     flex-wrap: wrap;
-
 }
 
-input{
-    padding: 5px;
-    margin: 10px;
-    
+.checkbox-form{
+    width: auto;
+    margin-right: 2vh;
+}
+
+.form_input{
+    font-family: 'roboto', sans-serif;
+    background-color: #95c1b7;
+    border: 1px solid black;
+}
+
+.form_input:hover{
+    background-color:#8bb3a9;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* media Query */
+
+/* pantallas dispositivos moviles */
+@media screen and (max-width: 768px){
+
+    h1, h2, h3, h4{
+        text-align: center;
+    }
+
+    p{
+        text-align: justify;
+    }
+
+    #encabezado{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .div_encabezado_txt h1{
+        width: 90%;
+        font-size: 2 rem;
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 4px BLACK;
+    }
+
+/* information about the teacher section  */
+
+    #teacher {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .div_teacher_txt{
+        width: 100%;
+        padding: 10vh;
+    }
+
+    .div_teacher_img{
+        width: 100%;
+        height: 200px;
+        height: 8%;
+    }
+
+    #iyengar{
+        display: flex;
+        flex-direction: column;
+    }
 }
