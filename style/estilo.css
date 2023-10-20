@@ -467,14 +467,102 @@ input, textarea{
         padding: 10vh;
     }
 
+    .div_teacher_txt p{
+        text-align: justify;
+    }
+
     .div_teacher_img{
         width: 100%;
-        height: 200px;
-        height: 8%;
+        height: 55vh;
+        object-fit: cover;
+    
     }
+
+    /* information about the iyengar technique */
 
     #iyengar{
         display: flex;
         flex-direction: column;
+        height: auto;
+    }
+
+    .iyengar_div_img{
+        display: none;
+        width: 100%;
+        height: 55vh;
+        object-fit: cover;
+    }
+
+    .iyengar_div_txt{
+        width: 100%;
+        padding: 5vh;
+    }
+
+    .iyengar_div_txt p{
+        text-align: justify;
+    }
+
+    /* information about the locatios */
+    /* esto es muy dificil :( */
+    #location{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .div_location_txt{
+        width: 100%;
+        padding: 10vh;
+    }
+
+    .div_location_map{
+        width: 100%;
+        padding: 5vh;
+    }
+
+    .div_location_map iframe{
+        width: 50%;
+        height: auto;
+
+    }
+
+    /* contact forma page */
+
+    .div_form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .div_form_left{
+        width: 100%;
+    }
+
+    
+    .div_form_txt{
+        width: 100%;
+    }
+
+    .div_form_txt p{
+        width: 100%;
+        text-align: justify;
+    }
+
+    .div_form_title{
+        width: 100%;
+    }
+
+    .div_form_title h2{
+        text-align: center;
+    }
+
+    .div_form_right{
+        width: 100%;
+        padding: 3vh;
     }
 }
