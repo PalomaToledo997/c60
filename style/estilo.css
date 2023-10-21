@@ -27,6 +27,7 @@ h1,h2,h3,h4{
 .subtitle{
     border-bottom: 2px solid #dac9df;
     width: 70vh;
+
     
     
 }
@@ -36,39 +37,45 @@ h1,h2,h3,h4{
 /* INDEX */
 /* menu */
 header{
-    display: flex;
     width: 100%;
-    height: 50px;
-    margin-bottom: 10vh;
     background-color: #95c1b7;
-    justify-content: center;
-    align-items: center;
     position: fixed;
+
     z-index: 1;
     -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
     -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
 }
 
+nav {
+    background-color: #95c1b7; 
+}
+
 nav ul{
-    display: flex;
     list-style-type: none;
 }
 
 nav li{
-    margin: 30px;
+    /* margin: 30px; */
     font-size: 20px;
-    text-shadow: 2px 2px 2px black;
     transition: transform 0.5s;
 }
 
-nav li a{
+nav ul li a{
     text-decoration: none;
-    color: white;
 }
 
 nav li:hover{
     transform: scale(1.1);
+}
+
+.collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-collapse {
+    display: initial;
 }
 
 /* MAIN */
@@ -106,11 +113,14 @@ nav li:hover{
     text-shadow: 2px 2px 4px BLACK;
 }
 
+
+
 /* button */
 .button{
     position: fixed;
     bottom: 10vh;
     right: 10vh;
+    animation:button 1s linear both;
 }
 
 .img_button{
@@ -122,6 +132,16 @@ nav li:hover{
 .img_button:hover{
     transform: scale(1.2);
 }
+
+
+/* animacion del button */
+
+    @keyframes button {
+    0%{transform:scale(0);
+    filter:blur(12px);opacity:0}
+    
+    100%{transform:scale(1);filter:blur(0);opacity:1}
+    }
 
 
 /* teacher */
@@ -147,6 +167,10 @@ nav li:hover{
 .div_teacher_txt p{
     width: 70%;
     margin-top: 30px;
+}
+
+.div_teacher_txt h2{
+    width: 70%;
 }
 
 .div_teacher_img{
@@ -192,6 +216,7 @@ nav li:hover{
 
 .iyengar_div_txt h2{
     margin: 20px;
+    width: 70%;
 
 }
 
@@ -249,6 +274,7 @@ nav li:hover{
     width: 45vh;
     padding-top: 2rem;
     align-self: center;
+    text-align: center;
 }
 .card article img {
     width: 220px;
@@ -277,8 +303,9 @@ nav li:hover{
     width: 50%;
 }
 
-.div_location_txt h2{
+.div_location_txt h4{
     margin-bottom: 20px;
+    width: 70%;
 }
 
 .div_location_txt p{
@@ -343,7 +370,7 @@ iframe{
 
 #contact{
     width: 100%;
-    padding: 9vh;
+    padding: 9vh 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,6 +393,8 @@ iframe{
     display: flex;
     flex-wrap: wrap;
     padding: 10vh ;
+    background: rgba(254, 255, 255, 0.2);
+
 }
 
 .div_form_left{
@@ -426,11 +455,36 @@ input, textarea{
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
 }
 
+/* ................................................................. */
+/* About Us */
+#about_us{
+    width: 100%;
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about_us h2{
+    margin: 5vh;
+    text-align: center;
+}
+
+#about_us p{
+    width: 70%;
+    text-align: justify;
+}
+
+
+
+
+
 /* ---------------------------------------------------------------------------------------------- */
 /* media Query */
 
 /* pantallas dispositivos moviles */
-@media screen and (max-width: 768px){
+@media screen and  (max-width: 768px) {
 
     h1, h2, h3, h4{
         text-align: center;
@@ -441,14 +495,24 @@ input, textarea{
     }
 
     #encabezado{
+        width: 100vw;
+        padding-top: 20px;
         display: flex;
         flex-direction: column;
+        margin: auto;
+    }
 
+    .div_encabezado_img{
+        width: 100%;
+    }
+    .div_encabezado_img img{
+        width: 80%;
+        margin: auto;
     }
 
     .div_encabezado_txt h1{
-        width: 90%;
-        font-size: 2 rem;
+        width: 100%;
+        font-size: 2rem;
         color: white;
         text-align: center;
         text-shadow: 2px 2px 4px BLACK;
@@ -514,12 +578,12 @@ input, textarea{
     }
     .div_location_txt{
         width: 100%;
-        padding: 10vh;
+        padding: 10vh 0;
     }
 
     .div_location_map{
         width: 100%;
-        padding: 5vh;
+        padding: 5vh 0;
     }
 
     .div_location_map iframe{
@@ -529,6 +593,7 @@ input, textarea{
     }
 
     /* contact forma page */
+
 
     .div_form{
         display: flex;
