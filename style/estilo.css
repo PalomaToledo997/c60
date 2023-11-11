@@ -18,7 +18,7 @@ h1,h2,h3,h4{
     line-height: 2;
 }
 
-/* clases */
+/* clases para aplicar estilos */
 .align_left{
     text-align: left;
     line-height: 2;
@@ -26,16 +26,13 @@ h1,h2,h3,h4{
 
 .subtitle{
     border-bottom: 2px solid #dac9df;
-    width: 70%;
-
-    
-    
+    width: 70%;   
 }
 
 
 
-/* INDEX */
-/* menu */
+/* COMIENZO DEL INDEX */
+/* Seccion del header */
 header{
     width: 100%;
     background-color: #95c1b7;
@@ -46,6 +43,7 @@ header{
     -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
 }
+/* Barra de navegacion */
 
 nav {
     background-color: #95c1b7; 
@@ -78,8 +76,8 @@ nav li:hover{
     display: initial;
 }
 
-/* MAIN */
-/* encabezado */
+/* COMIENZO DEL MAIN */
+/* encabezado donde va el tilulo y logo*/
 
 #encabezado{
     width: 100%;
@@ -93,7 +91,7 @@ nav li:hover{
 .div_encabezado_img{
     width: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 }
 
@@ -115,7 +113,7 @@ nav li:hover{
 
 
 
-/* button */
+/* botton para volver al header */
 .button{
     position: fixed;
     bottom: 10vh;
@@ -134,7 +132,7 @@ nav li:hover{
 }
 
 
-/* animacion del button */
+/* animacion del boton */
 
     @keyframes button {
     0%{transform:scale(0);
@@ -144,7 +142,7 @@ nav li:hover{
     }
 
 
-/* teacher */
+/* Seccion con la informacion sobre la profesora */
 #teacher{
     width: 100%;
     height: 400px;
@@ -185,7 +183,7 @@ nav li:hover{
     object-fit: cover;
 }
 
-/* iyengar */
+/* Seccion con informacion sobre la técnica iyengar */
 #iyengar{
     width: 100%;
     height: 400px;
@@ -227,7 +225,7 @@ nav li:hover{
 }
 
 
-/* Benefits */
+/* Seccion con cards donde se indican los beneficios del yoga */
 #benefits {
     width: 100%;
     padding: 2rem;
@@ -248,6 +246,8 @@ nav li:hover{
     text-align: center;
 }
 
+/* cards que contienen los beneficios */
+
 .div_benefits_cards{
     display: flex;
     flex-wrap: wrap;
@@ -267,8 +267,7 @@ nav li:hover{
     text-align: center;
     box-shadow: 1.5vh 1.5vh 1.5vh rgba(0, 0, 0, 0.671);
     transition: transform 1s;
-    background-color: white;
-    
+    background-color: white;   
 }
 .card article p {
     width: 45vh;
@@ -287,7 +286,7 @@ nav li:hover{
     transform: scale(1.1);
 }
 
-/* location */
+/* Seccion con la info de la ubicacion */
 
 #location{
     width: 100%;
@@ -324,6 +323,8 @@ nav li:hover{
 
 iframe{
     box-shadow: 1px 1px 8px black;
+    width: 400px;
+    height:300px;
 }
 
 
@@ -347,7 +348,6 @@ iframe{
 
 .div_footer_logo a{
     transition: transform 1s;
-
 }
 .div_footer_logo a:hover{
     transform: scale(1.2);
@@ -365,8 +365,8 @@ iframe{
     color: white;
 }
 
-/* ------------------------------------------------------------------- */
-/* form */
+/* .................................................... */
+/* PAGINA DONDE SE ENCUENTRA EL FORMULARIO DE CONTACTO */
 
 #contact{
     width: 100%;
@@ -375,6 +375,7 @@ iframe{
     justify-content: center;
     align-items: center;
 }
+
 #form{
     display: flex;
     flex-direction: row;
@@ -386,7 +387,6 @@ iframe{
     -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.486);
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.226);
     flex-wrap: wrap;
-
 }
 
 .div_form{
@@ -394,7 +394,6 @@ iframe{
     flex-wrap: wrap;
     padding: 10vh ;
     background: rgba(254, 255, 255, 0.2);
-
 }
 
 .div_form_left{
@@ -408,7 +407,6 @@ iframe{
 .div_form_left p{
     text-align: justify;
     width: 80%;
-
 }
 
 .div_form_title{
@@ -456,7 +454,7 @@ input, textarea{
 }
 
 /* ................................................................. */
-/* About Us */
+/* PAGINA DEL "ABOUT US" CON INFORMACION EXTENDIDA DEL LUGAR */
 #about_us{
     width: 100%;
     padding: 5vh;
@@ -496,13 +494,11 @@ input, textarea{
     -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.486);
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.226);
     border-radius: 4px;
-
 }
 
 .div_about_img img{
     width: 100%;
     height: 20%;
-
 }
 
 .about_div_txt{
@@ -512,7 +508,6 @@ input, textarea{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .about_div_txt p{
@@ -520,13 +515,106 @@ input, textarea{
     text-align: justify;
 }
 
+/* COMIENZO DE PÁGINA CON INFORMACION SOBRE LAS CLASES */
+/* la estructura de la página se hara con GRID */
+
+#main_classes{
+    display: grid;
+    grid-template-areas: 
+    "aside cuerpo cuerpo"
+    "aside cuerpo cuerpo";
+}
+
+#seccion_filtros{
+    grid-area:aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    background-color:#f5f4f4;
+}
+
+#seccion_filtros label{
+    padding-top: 100px;
+}
+.button-search{
+    padding: 5px;
+    width: 100%;
+    margin-top: 100px;
+    background-color:#b695c0;
+    color: #ffffff;
+}
+
+select{
+    width: 100%;
+    padding: 5px;
+    transition: transform 0.5s;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
+}
+
+select:hover{
+    transition: scale (1.8);
+}
+
+#seccion_info_clases{
+    grid-area: cuerpo;
+    display: flex;
+    flex-direction: column;
+}
+
+.div_clases_titulo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.div_clases_titulo h3, p{
+    width: 70%;
+}
+
+.button-contact{
+    width: 130px;
+    padding: 10px;
+    text-align: center;
+    background-color: #b695c0;
+    border-radius: 3%;
+    color: #ffffff;
+    text-decoration: none;
+    transition: transform 0.5s;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
+}
+
+.button-contact:hover{
+    transform: scale(1.07);
+}
+
+.conteiner_clases{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
 
 
 
 
 
 /* ---------------------------------------------------------------------------------------------- */
-/* media Query */
+/* Comienzo de las media Querys */
 
 /* pantallas dispositivos moviles */
 @media screen and  (max-width: 768px) {
@@ -538,7 +626,7 @@ input, textarea{
     p{
         text-align: justify;
     }
-
+/* Responsive del index: encabezado */
     #encabezado{
         width: 100vw;
         padding-top: 20px;
@@ -563,7 +651,7 @@ input, textarea{
         text-shadow: 2px 2px 4px BLACK;
     }
 
-/* information about the teacher section  */
+/* Responsive del index: informacion sobre la profesora  */
 
     #teacher {
         display: flex;
@@ -587,7 +675,7 @@ input, textarea{
     
     }
 
-    /* information about the iyengar technique */
+    /* Responsive del index: seccion de la tecnica Iyengar */
 
     #iyengar{
         display: flex;
@@ -611,8 +699,7 @@ input, textarea{
         text-align: justify;
     }
 
-    /* information about the locatios */
-    /* esto es muy dificil :( */
+    /* Index: seccion de ubicacion */
     #location{
         display: grid;
         width: 100%;
@@ -634,11 +721,9 @@ input, textarea{
     .div_location_map iframe{
         width: 50%;
         height: auto;
-
     }
 
-    /* contact forma page */
-
+/* PAGINA DE FORMULARIO DE CONTACTO */
 
     .div_form{
         display: flex;
@@ -646,14 +731,12 @@ input, textarea{
         flex-wrap: wrap;
         width: 100%;
         height: auto;
-
     }
 
     .div_form_left{
         width: 100%;
     }
 
-    
     .div_form_txt{
         width: 100%;
     }

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../style/estilo.css">
+    <title>Clases</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <!-- comienzo del menu -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/aboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../pages/clases.html">Clasess</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#location">Location</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main_classes">
+    <!-- SECCION CON FILTROS DE JAVA SCRIPT PARA QUE EL USUARIO ENCUENTRE SU CLASE ADECUADA -->
+    <aside id="seccion_filtros">
+
+        <!-- input para indicar la edad -->
+        <label for="edad">indicate your age</label><br>
+        <input type="number" name="edad" id="edad"><br>
+
+        <!-- boton "select" pqrq indicar turno tarde o mañana -->
+        <label for="turno">Choose a turn</label>
+        <select name="turno" id="turno">
+            <option value="mañana">morning</option>
+            <option value="tarde">afternoon</option>
+        </select>
+
+        <!-- boton de busqueda -->
+        <button class="button-search">Search</button>
+    
+    </aside>
+
+    <!-- SECCION CON INFORMACION SOBRE LAS CLASES DISPONIBLE  -->
+    <section id="seccion_info_clases">
+        <!-- titulo -->
+        <div class="div_clases_titulo">
+            <h3 class="title subtitle">Finde the best class for you</h3>
+            <p>Select you age and level, and finde the best class for you. If you hace any question, please reach us by cleacking on the button bellow </p>
+            <a class="button-contact" href="../pages/contact.html">Ask a question</a>
+        </div>
+
+        <!-- tarjetas con info sobre horarios y niveles -->
+
+        <div class="conteiner_clases">
+            <!-- card 1 : turno mañana - infanil -->
+            <div  id="card_1" class="cards_classes">
+                <div class="div_card_img">
+                    <img src="../img/yoga-pinterest-blue.jpg" alt="">
+                </div>
+            <div class="div_card_info">
+                <p>LEVEL</p><br>
+                <i>horario</i>                                                                                
+            </div>
+            <!-- card 2 : turno tarde - infantil -->
+            </div>
+            <div  id="card_2" class="cards_classes">
+                <div class="div_card_img">
+                    <img src="../img/yoga-pinterest-blue.jpg" alt="">
+                </div>
+                <div class="div_card_info">
+                    <p>LEVEL</p><br>
+                    <i>horario</i>
+                </div>
+            </div>
+            <!-- card 3: turno mañana - adultos -->
+            <div  id="card_3" class="cards_classes">
+                <div class="div_card_img">
+                    <img src="../img/yoga-pinterest-blue.jpg" alt="">
+                </div>
+                <div class="div_card_info">
+                    <p>LEVEL</p><br>
+                    <i>horario</i>
+                </div>
+            </div>
+            <!-- card 4: turno tarde - adultos -->
+            <div  id="card_4" class="cards_classes">
+                <div class="div_card_img">
+                    <img src="../img/yoga-pinterest-blue.jpg" alt="">
+                </div>
+                <div class="div_card_info">
+                    <p>LEVEL</p><br>
+                    <i>horario</i>
+                </div>
+            </div>
+        </div>
+    </section>        
+    </main>
+    <!-- comienzo del footer -->
+    <footer id="footer">
+        <div class="div_footer_logo">
+            <a href="https://www.instagram.com/paloma.toledo_/">
+                <img class="img_logo" src="../logo/instagram.png" alt="logo de facebook">
+            </a> 
+
+            <a href="https://www.facebook.com/mariaantonia.luis">
+                <img class="img_logo" src="../logo/facebook.png" alt="logo de instagram">
+            </a> 
+
+            <a href="https://www.google.com/maps/@-34.6524902,-58.7624138,16z/data=!10m2!1e3!2e10!12b1?rapsrc=apiv3&entry=ttu">
+                <img class="img_logo" src="../logo/ubicacion.png" alt="logo de google maps">
+            </a>
+        </div>
+
+        <div class="div_footer_name">
+            <p>powerd by Paloma Toledo</p>
+        </div>
+    </footer>
+    
+    <!-- enlce a bootstrap local -->
+    <script src="../bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
