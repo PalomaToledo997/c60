@@ -528,6 +528,7 @@ input, textarea{
     grid-template-areas: 
     "aside cuerpo cuerpo"
     "aside cuerpo cuerpo";
+    grid-template-columns: 200px auto auto;
 }
 
 #seccion_filtros{
@@ -542,11 +543,11 @@ input, textarea{
 
 #seccion_filtros label{
     padding-top: 100px;
+    margin: 10px;
 }
 .button-search{
-    padding: 5px;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 10px;
     background-color:#b695c0;
     color: #ffffff;
 }
@@ -600,7 +601,7 @@ select:hover{
 }
 
 .filtro-carta{
-    width: 130px;
+    width: 100%;
     padding: 10px;
     text-align: center;
     border-radius: 3%;
@@ -668,15 +669,6 @@ select:hover{
     opacity: 0;
     order: 1;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -826,4 +818,29 @@ select:hover{
         width: 100%;
         padding: 3vh;
     }
-}
+
+    /* pagina con la informacion sobre las clases */
+    #main_classes{
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .div_clases_titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #seccion_filtros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #seccion_filtros label{
+        padding-top: 60px;
+    }
+}        
