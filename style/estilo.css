@@ -29,7 +29,11 @@ h1,h2,h3,h4{
     width: 70%;   
 }
 
-
+/* animacion para usar con js */
+.animado{
+    opacity: 0;
+    transition: all 0.4s;
+}
 
 /* COMIENZO DEL INDEX */
 /* Seccion del header */
@@ -37,7 +41,6 @@ header{
     width: 100%;
     background-color: #95c1b7;
     position: fixed;
-
     z-index: 1;
     -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
     -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
@@ -54,7 +57,6 @@ nav ul{
 }
 
 nav li{
-    /* margin: 30px; */
     font-size: 20px;
     transition: transform 0.5s;
 }
@@ -111,8 +113,6 @@ nav li:hover{
     text-shadow: 2px 2px 4px BLACK;
 }
 
-
-
 /* botton para volver al header */
 .button{
     position: fixed;
@@ -131,7 +131,6 @@ nav li:hover{
     transform: scale(1.2);
 }
 
-
 /* animacion del boton */
 
     @keyframes button {
@@ -140,7 +139,6 @@ nav li:hover{
     
     100%{transform:scale(1);filter:blur(0);opacity:1}
     }
-
 
 /* Seccion con la informacion sobre la profesora */
 #teacher{
@@ -191,6 +189,8 @@ nav li:hover{
     flex-wrap: wrap;
 }
 
+/* animacion del encabezado para JavaScript */
+
 .iyengar_div_img{
     width: 50%;
     height: 100%;
@@ -235,6 +235,7 @@ nav li:hover{
     align-items: center;
     margin: auto;
     background-color:#95c1b7;
+
 }
 
 .div_benefits_title{
@@ -361,8 +362,12 @@ iframe{
 .div_footer_name{
     display: flex;
     justify-content: center;
-    align-items:end;
+    align-items:center;
     color: white;
+}
+
+.div_footer_name p{
+    width: auto;
 }
 
 /* .................................................... */
@@ -567,7 +572,7 @@ select:hover{
 
 .div_clases_titulo{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     margin-top: 100px;
     padding: 20px;
 }
@@ -594,11 +599,74 @@ select:hover{
     transform: scale(1.07);
 }
 
+.filtro-carta{
+    width: 130px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 3%;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
+}
+
 .conteiner_clases{
     width: 100%;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_classes{
+    width: 300px;
+    padding: 10px;
+    margin: 20px;
+    background-color: #f5f4f4;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.301);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.486);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.226);
+    transition: transform 1s;
+}
+
+.card_classes:hover{
+    transform: scale(1.02);
+}
+
+.div_card_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_card_info p{
+    width: 60%;
+    line-height: 1;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    text-align: center;
+}
+
+
+.div_card_img{
+    width: 100%;
+    padding: 5px;
+}
+
+.div_card_img img{
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+
+}
+
+.filter{
+    visibility: hidden;
+    opacity: 0;
+    order: 1;
 }
 
 

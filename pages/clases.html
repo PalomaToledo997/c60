@@ -44,18 +44,17 @@
     <aside id="seccion_filtros">
 
         <!-- input para indicar la edad -->
-        <label for="edad">indicate your age</label><br>
-        <input type="number" name="edad" id="edad"><br>
 
-        <!-- boton "select" pqrq indicar turno tarde o mañana -->
-        <label for="turno">Choose a turn</label>
-        <select name="turno" id="turno">
-            <option value="mañana">morning</option>
-            <option value="tarde">afternoon</option>
-        </select>
-
+        <label>Calcular el indice de masa corporal</label>
+        <input type="number" id="edad"  min="10" max="90" placeholder="indique su edad">
+        <button type="button" onclick="nivelPorEdad()">Calcular</button>
+        <p id="grupo"></p>
+        
         <!-- boton de busqueda -->
-        <button class="button-search">Search</button>
+        <!-- <button class="button-search">Search</button> -->
+
+        <!-- input para filtrar -->
+        <input type="search" placeholder="Buscar..." class="filtro-carta">
     
     </aside>
 
@@ -71,44 +70,65 @@
         <!-- tarjetas con info sobre horarios y niveles -->
 
         <div class="conteiner_clases">
+            
             <!-- card 1 : turno mañana - infanil -->
-            <div  id="card_1" class="cards_classes">
+            <div  id="card_1" class="card_classes">
                 <div class="div_card_img">
                     <img src="../img/yoga-pinterest-blue.jpg" alt="">
                 </div>
             <div class="div_card_info">
-                <p>LEVEL</p><br>
-                <i>horario</i>                                                                                
+                <p>INFANTIL</p>
+                <i>10 to 11 hs</i>                                                                                
             </div>
             <!-- card 2 : turno tarde - infantil -->
             </div>
-            <div  id="card_2" class="cards_classes">
+            <div  id="card_2" class="card_classes">
                 <div class="div_card_img">
-                    <img src="../img/yoga-pinterest-blue.jpg" alt="">
+                    <img src="../img/yoga-pinterest-back.jpg" alt="">
                 </div>
                 <div class="div_card_info">
-                    <p>LEVEL</p><br>
-                    <i>horario</i>
+                    <p>INFANTIL</p>
+                    <i>17 to 18hs</i>
                 </div>
             </div>
             <!-- card 3: turno mañana - adultos -->
-            <div  id="card_3" class="cards_classes">
+            <div  id="card_3" class="card_classes">
                 <div class="div_card_img">
-                    <img src="../img/yoga-pinterest-blue.jpg" alt="">
+                    <img src="../img/yoga-pinterest-green.jpg" alt="">
                 </div>
                 <div class="div_card_info">
-                    <p>LEVEL</p><br>
-                    <i>horario</i>
+                    <p>ADULTS</p>
+                    <i>9 to 10 hs</i>
                 </div>
             </div>
             <!-- card 4: turno tarde - adultos -->
-            <div  id="card_4" class="cards_classes">
+            <div  id="card_4" class="card_classes">
                 <div class="div_card_img">
-                    <img src="../img/yoga-pinterest-blue.jpg" alt="">
+                    <img src="../img/yoga-pinterest-leg.jpg" alt="">
                 </div>
                 <div class="div_card_info">
-                    <p>LEVEL</p><br>
-                    <i>horario</i>
+                    <p>ADULTS</p>
+                    <i>18 TO 19 hss</i>
+                </div>
+            </div>
+            <!-- clase de estiramiento -->
+            <div  id="card_5" class="card_classes">
+                <div class="div_card_img">
+                    <img src="../img/yoga-hands.jpg" alt="">
+                </div>
+                <div class="div_card_info">
+                    <p>STRETCHING</p>
+                    <i>19 TO 20 hss</i>
+                </div>
+            </div>
+            <!-- segunda clase de estiramiento -->
+            <div  id="card_5" class="card_classes">
+                <div class="div_card_img">
+                    <img src="../img/yoga-girl1.jpg" alt="">
+                </div>
+                <div class="div_card_info">
+                    <p>STRETCHING</p>
+                    <i>8 TO 9 hs</i>
                 </div>
             </div>
         </div>
