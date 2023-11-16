@@ -39,10 +39,7 @@ function nivelPorEdad () {
     } 
 }
 
-
-
-
-
+//funcion para que aparezca un texto indicando a que grupo corresponde según la edad. 
 function nivelPorEdad(){
         
     let edad = document.getElementById("edad").value;
@@ -50,20 +47,36 @@ function nivelPorEdad(){
     if((edad >= 8)&&(edad<=12)) {
         grupo.textContent = "Pertenece al grupo de INTANTILES";
 
-
-    }else if((edad >= 17)&&(edad<=70)){
+    }else if((edad >= 18)&&(edad<=70)){
         grupo.textContent = "Pertenece al grupo ADULTOS";
 
-    }else if((edad < 8)&&(edad >70)){
-        grupo.textContent = "No contamos con grupos de esa edad";
+    }else if((edad <=13)||(edad >=17)){
+        grupo.textContent = "Puede tomar las clases de STRETCHING";
 
     }else{
-        grupo.textContent = "Puede tomar las clases de STRETCHING";
+        grupo.textContent = "No contamos con clases disponibles";
 
     }
 
 }
 
+//boton ocultar para mostrar texto en las cards
+let hideBtn = document.getElementById ("hideBtn");
+
+let hideTxt = document.getElementById ("hideTxt");
+
+hideBtn.addEventListener("click", toggleText); //le añado el evento al boton para mostrar
+
+function toggleText (){
+    hideTxt.classList.toggle("mostrar"); //funcion para que salte a la clase "mostrar" cuando haga click
+
+    if (hideTxt.classList.contains("mostrar")){
+        hideBtn.innerHTML="Read Less";
+    }//condicional para que si el hideTxt contiene la clase "mostrar", el boton diga "leer menos"
+    else{
+        hideBtn.innerHTML="Read More"; 
+    }
+}
 
 
 
