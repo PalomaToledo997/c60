@@ -266,8 +266,8 @@ nav li:hover{
     border-radius: 10%;
     margin: 30px;
     text-align: center;
-    box-shadow: 1.5vh 1.5vh 1.5vh rgba(0, 0, 0, 0.671);
-    transition: transform 1s;
+    box-shadow: 1.5vh 1.5vh 1.5vh rgba(112, 112, 112, 0.671);
+    transition: transform 1.2s;
     background-color: white;   
 }
 .card article p {
@@ -283,7 +283,7 @@ nav li:hover{
 }
 
 .card:hover {
-    box-shadow: 2vh 2vh 2vh rgba(0, 0, 0, 0.651);
+    box-shadow: 2vh 2vh 2vh rgba(109, 109, 109, 0.651);
     transform: scale(1.01);
 }
 
@@ -296,6 +296,7 @@ nav li:hover{
     -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
     -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.10);
+    border: 1px solid #d7d7d7;
 }
 
 .btn-leerMas:hover{
@@ -757,7 +758,7 @@ select:hover{
 
     .div_teacher_txt{
         width: 100%;
-        padding: 10vh;
+        padding: 5vh;
     }
 
     .div_teacher_txt p{
